@@ -50,9 +50,9 @@ header {
       header nav ul li {
         float: left;
         padding-right: 2%;
-        text-align: left; }
+        text-align: center; }
         header nav ul li a {
-          font-size: 16px;
+          font-size: 0.8em;
           letter-spacing: 0px;
           line-height: 69px;
           color: #000000;
@@ -61,14 +61,14 @@ header {
   header .dropdown {
     background-color: #dfdede;
     width: 80px;
-    height: 115px;
+    height: 100px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
     border-radius: 5px;
     box-shadow: 0 5px 5px #ccc;
     display: block; }
     header .dropdown li {
-      font-size: 16px;
+      font-size: 0.8em;
       letter-spacing: 0px;
       line-height: 25px;
       color: #000000;
@@ -129,7 +129,8 @@ header {
         font-size: 25px; }
     header nav .dropdown {
       width: 150px;
-      height: 180px; }
+      height: 180px;
+      padding-top: 10px; }
       header nav .dropdown li {
         line-height: 40px;
         font-size: 25px; }

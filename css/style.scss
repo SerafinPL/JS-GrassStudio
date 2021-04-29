@@ -55,12 +55,12 @@ header {
 	    li {
 		    float: left;
 		    padding-right: 2%;
-		    text-align: left;
+		    text-align: center;
 
 		    
 
 		    a{
-		    	font-size: 16px;
+		    	font-size: 0.8em;
 				letter-spacing: 0px;
 				line-height: 69px;
 				color: #000000;
@@ -76,9 +76,9 @@ header {
 	.dropdown{
 		    	background-color: #dfdede;
 		    	width: 80px;
-		    	height: 115px;
+		    	height: 100px;
 		    	text-align: center;
-		    	padding-top:10px;
+		    	padding-top:0px;
 		    	border-radius: 5px;
 		    	box-shadow: 0 5px 5px #ccc;
 		    	display: block; 
@@ -86,7 +86,7 @@ header {
 
 		    	li{
 		    		
-		    		font-size: 16px;
+		    		font-size: 0.8em;
 					letter-spacing: 0px;
 					line-height: 25px;
 					color: #000000;
@@ -176,9 +176,11 @@ header {
 			    .dropdown{
 			    		width: 150px;
 		    			height: 180px;
+		    			padding-top:10px;
 	    		    	li{
 	    					line-height: 40px;
 				    		font-size: 25px;
+
 				    	}
 					    }
    
