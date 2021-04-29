@@ -241,9 +241,15 @@ main h3 {
     padding-right: 5%; } }
 /*---- GALLERY ----*/
 .gallery {
-  display: flex; }
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  margin: 25px 0; }
   .gallery .photo {
-    flex: 1 1 200px; }
+    height: 400px;
+    background-size: cover;
+    background-position: center; }
   .gallery #img1 {
     background-image: url("../assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"); }
   .gallery #img2 {
@@ -263,6 +269,23 @@ main h3 {
   .gallery #img9 {
     background-image: url("../assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"); }
 
+@media only screen and (min-width: 600px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 1%; } }
+@media only screen and (min-width: 1000px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 3%;
+    grid-row-gap: 3%; } }
+@media only screen and (min-width: 1350px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%; } }
 /*--- FOOTER ---*/
 
 /*# sourceMappingURL=style.css.map */
