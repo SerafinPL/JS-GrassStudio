@@ -1,0 +1,169 @@
+/*--- RESET ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans"; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/*--- RESET END ---*/
+/*--- MAIN CLASSES---*/
+/*--- HEADER ORAZ MENU ---*/
+header {
+  background-image: url("../assets/seacost.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  position: relative;
+  /*nav*/ }
+  header h1 {
+    padding-top: 25px;
+    padding-left: 8.35%;
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 75px;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Open Sans";
+    display: block;
+    width: 100%; }
+  header nav {
+    padding-top: 10px;
+    /*padding-right: 8vw;*/
+    display: block; }
+    header nav ul {
+      list-style-type: none;
+      display: block;
+      margin: 0;
+      padding: 0; }
+      header nav ul :first-child {
+        padding-left: 8.35%; }
+      header nav ul :last-child {
+        padding-right: 3%;
+        padding-left: 0%; }
+      header nav ul li {
+        float: left;
+        padding-right: 2%; }
+        header nav ul li a {
+          font-size: 16px;
+          letter-spacing: 0px;
+          line-height: 69px;
+          color: #000000;
+          font-weight: 800;
+          font-family: "Open Sans"; }
+  header div {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    width: 270px; }
+    header div h2 {
+      font-size: 35px;
+      letter-spacing: 1px;
+      line-height: 55px;
+      color: #ffffff;
+      font-weight: 800;
+      width: 260px; }
+    header div span {
+      display: inline-block;
+      width: 120px;
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 32px;
+      color: #ffffff;
+      font-weight: 600; }
+    header div a {
+      float: right;
+      width: 148px;
+      height: 47px;
+      text-align: center;
+      padding: 15px 0px 15px 0px;
+      border: 2px solid #FFF;
+      font-size: 24px;
+      letter-spacing: 0px;
+      line-height: 16px;
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+      margin-top: 70px;
+      border-radius: 25px; }
+
+/*header*/
+@media only screen and (min-width: 600px) {
+  header {
+    height: 761px; }
+    header h1 {
+      padding-top: 77px;
+      padding-left: 8.35%; }
+    header nav ul :first-child {
+      padding-left: 8.35%; }
+    header nav ul li a {
+      font-size: 25px; }
+    header div {
+      right: 11%;
+      bottom: 10%;
+      width: 444px; }
+      header div h2 {
+        font-size: 50px;
+        width: 366px; }
+      header div span {
+        font-size: 21px;
+        width: 250px; }
+      header div a {
+        font-size: 24px;
+        width: 167px;
+        height: 47px;
+        margin-top: 10px; } }
+@media only screen and (min-width: 900px) {
+  header h1 {
+    padding-left: 5%;
+    display: inline-block;
+    width: auto;
+    float: left; }
+  header nav {
+    padding-top: 90px; }
+    header nav ul :first-child {
+      padding-left: 5%; }
+    header nav ul :last-child {
+      padding-right: 0%;
+      padding-left: 0%; }
+    header nav ul li {
+      padding-right: 4%; } }
+@media only screen and (min-width: 900px) {
+  header h1 {
+    padding-left: 5%;
+    display: inline-block;
+    width: auto;
+    float: left; }
+  header nav {
+    padding-top: 90px; }
+    header nav ul :first-child {
+      padding-left: 5%; }
+    header nav ul :last-child {
+      padding-right: 0%;
+      padding-left: 0%; }
+    header nav ul li {
+      padding-right: 4%; } }
+@media only screen and (min-width: 1000px) {
+  header h1 {
+    padding-left: 5%;
+    display: inline-block; }
+  header nav ul :first-child {
+    padding-left: 14%; } }
+@media only screen and (min-width: 1350px) {
+  header h1 {
+    padding-left: 8.35%;
+    display: inline-block; }
+  header nav ul :first-child {
+    padding-left: 17.72%; }
+  header nav ul li {
+    padding-right: 5%; } }
+/*--- MAIN ---*/
+/*--- FOOTER ---*/
+
+/*# sourceMappingURL=style.css.map */

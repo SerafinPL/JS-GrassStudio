@@ -1,0 +1,37 @@
+$bgcolor: #000;
+$textcolor: #00cc00; /*  Jasno zielony */
+
+$textcolorhover: #00ee00; /*  bardzo Jasno zielony */
+
+
+
+nav {
+  width: 100%;
+
+  ul {
+    list-style-type: none;
+    width:100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #004400; /* bardzo Ciemno zielony */
+    padding: 5px;
+  }
+
+  li:hover {
+    background-color: #004400; /* bardzo Ciemno zielony */
+  }
+
+  li a, li a:visited{
+    text-decoration: none;
+    color: $textcolor; /*  Jasno zielony */
+  }
+  li:hover a {
+      color: $textcolorhover;
+    }
+}
