@@ -242,10 +242,10 @@ main h3 {
 /*---- GALLERY ----*/
 .gallery {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 5%;
-  grid-row-gap: 5%;
-  margin: 25px 0; }
+  grid-template-columns: auto;
+  grid-row-gap: 1%;
+  margin-top: 75px;
+  margin-bottom: 150px; }
   .gallery .photo {
     height: 400px;
     background-size: cover;
@@ -269,11 +269,6 @@ main h3 {
   .gallery #img9 {
     background-image: url("../assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"); }
 
-@media only screen and (min-width: 600px) {
-  .gallery {
-    display: grid;
-    grid-template-columns: auto;
-    grid-row-gap: 1%; } }
 @media only screen and (min-width: 1000px) {
   .gallery {
     display: grid;
@@ -287,5 +282,9 @@ main h3 {
     grid-column-gap: 5%;
     grid-row-gap: 5%; } }
 /*--- FOOTER ---*/
+footer {
+  background-color: #535353; }
+  footer p {
+    padding: 3%; }
 
 /*# sourceMappingURL=style.css.map */
