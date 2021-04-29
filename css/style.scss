@@ -5,6 +5,16 @@
 
 
 $initialPaddingLeft: 3%;
+$initialPaddingRight: 3%;
+
+$PaddingLeft600: 8.35%;
+$PaddingRight600: 5%;
+
+$PaddingLeft1000: 5%;
+$PaddingRight1000: 5%;
+
+$PaddingLeft1350: 8.35%;
+$PaddingRight1350: 5%;
 
 
 /*--- HEADER ORAZ MENU ---*/
@@ -47,7 +57,7 @@ header {
 	    }
 
 	    :last-child{
-	    	padding-right: 3%;
+	    	padding-right: $initialPaddingRight;
 	    	padding-left: 0%;
 	    }
 
@@ -154,13 +164,13 @@ header {
 			height: 761px;
 			h1{ 
 				padding-top: 77px;
-				padding-left: 8.35%;
+				padding-left: $PaddingLeft600;
 				
 			}
 			nav {
 				ul {
 					:first-child{
-			    		padding-left: 8.35%;
+			    		padding-left: $PaddingLeft600;
 			    	}
 			    	li{
 			    		float: left;
@@ -214,7 +224,7 @@ header {
 @media only screen and (min-width: 1000px) {
 	header{
 			h1{ 
-				padding-left: 5%;
+				padding-left: $PaddingLeft1000;
 				display: inline-block;
 				width: auto;
 				float: left;
@@ -223,14 +233,14 @@ header {
 				padding-top: 90px;
 				ul {
 					:first-child{
-			    		padding-left: 5%;
+			    		padding-left: 3%;
 			    	}
 			    	:last-child{
-			    		padding-right: 0%;
+			    		padding-right: $PaddingRight1000;
 			    		padding-left: 0%;
 			    	}
 			    	li {
-			    		padding-right: 4%;
+			    		padding-right: 3%;
 					}
 			    }
    
@@ -246,7 +256,7 @@ header {
 @media only screen and (min-width: 1350px) {
 	header{
 			h1{ 
-				padding-left: 8.35%;
+				padding-left: $PaddingLeft1350;
 				
 			}
 			nav {
@@ -272,28 +282,85 @@ header {
 
 main {
 		.firstSection{
-
+			padding-top: 30px;
 			display: flex;
 			flex-wrap: wrap;
 			padding-left: $initialPaddingLeft;
-			h3{
-				font-size: 49px;
-				letter-spacing: 0px;
-				line-height: 86px;
-				color: #53686c;
-				font-weight: 700;
-				flex-shrink: 10;
-				width: 100%;
-			}
+			padding-right: $initialPaddingRight;
+			padding-bottom: 30px;
+			
 
 			div{
 				flex: 1 1 200px;
-
+				padding-right: 4%;
 			}
 
 		}
 
+		.secondSection{
+			@extend .firstSection;
+			background-color: #f9f9f9;
+			display: block;
+
+			img {
+				float: left;
+				padding-right: 30px;
+				max-width: 350px;
+				width: 100%;
+			}
+
+			div.second{
+				padding-top: 2%;
+			}
+			
+		}
+
+		h3{
+			font-size: 49px;
+			letter-spacing: 0px;
+			line-height: 86px;
+			color: #53686c;
+			font-weight: 700;
+			flex-shrink: 10;
+			width: 100%;
+		}
+
 	}/*main*/
+
+
+
+@media only screen and (min-width: 600px){
+	main{
+		.firstSection{
+
+			
+			padding-left: $PaddingLeft600;
+			padding-right: $PaddingRight600;
+		}
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	main{
+		.firstSection{
+
+			
+			padding-left: $PaddingLeft1000;
+			padding-right: $PaddingRight1000;
+		}
+	}
+}
+
+@media only screen and (min-width: 1350px){
+	main{
+		.firstSection{
+
+			
+			padding-left: $PaddingLeft1350;
+			padding-right: $PaddingRight1350;
+		}
+	}
+}
 
 
 	

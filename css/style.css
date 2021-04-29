@@ -158,12 +158,12 @@ header {
   header nav {
     padding-top: 90px; }
     header nav ul :first-child {
-      padding-left: 5%; }
+      padding-left: 3%; }
     header nav ul :last-child {
-      padding-right: 0%;
+      padding-right: 5%;
       padding-left: 0%; }
     header nav ul li {
-      padding-right: 4%; } }
+      padding-right: 3%; } }
 @media only screen and (min-width: 1350px) {
   header h1 {
     padding-left: 8.35%; }
@@ -172,22 +172,48 @@ header {
   header nav ul li {
     padding-right: 5%; } }
 /*--- MAIN ---*/
-main .firstSection {
+main .firstSection, main .secondSection {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 3%; }
-  main .firstSection h3 {
-    font-size: 49px;
-    letter-spacing: 0px;
-    line-height: 86px;
-    color: #53686c;
-    font-weight: 700;
-    flex-shrink: 10;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 30px; }
+  main .firstSection div, main .secondSection div {
+    flex: 1 1 200px;
+    padding-right: 4%; }
+main .secondSection {
+  background-color: #f9f9f9;
+  display: block; }
+  main .secondSection img {
+    float: left;
+    padding-right: 30px;
+    max-width: 350px;
     width: 100%; }
-  main .firstSection div {
-    flex: 1 1 200px; }
+  main .secondSection div.second {
+    padding-top: 2%; }
+main h3 {
+  font-size: 49px;
+  letter-spacing: 0px;
+  line-height: 86px;
+  color: #53686c;
+  font-weight: 700;
+  flex-shrink: 10;
+  width: 100%; }
 
 /*main*/
+@media only screen and (min-width: 600px) {
+  main .firstSection, main .secondSection {
+    padding-left: 8.35%;
+    padding-right: 5%; } }
+@media only screen and (min-width: 1000px) {
+  main .firstSection, main .secondSection {
+    padding-left: 5%;
+    padding-right: 5%; } }
+@media only screen and (min-width: 1350px) {
+  main .firstSection, main .secondSection {
+    padding-left: 8.35%;
+    padding-right: 5%; } }
 /*--- FOOTER ---*/
 
 /*# sourceMappingURL=style.css.map */
