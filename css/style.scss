@@ -5,13 +5,13 @@
 
 
 $initialPaddingLeft: 3%;
-$initialPaddingRight: 3%;
+$PaddingRight: 5%;
 
 $PaddingLeft600: 8.35%;
 $PaddingRight600: 5%;
 
 $PaddingLeft1000: 5%;
-$PaddingRight1000: 5%;
+$PaddingRight1000: 3.5%;
 
 $PaddingLeft1350: 8.35%;
 $PaddingRight1350: 5%;
@@ -54,16 +54,17 @@ header {
 	    
 	    :first-child{
 	    	padding-left: $initialPaddingLeft;
+	    	padding-right: $PaddingRight;
 	    }
 
 	    :last-child{
-	    	padding-right: $initialPaddingRight;
+	    	
 	    	padding-left: 0%;
 	    }
 
 
 	    li {
-		    float: left;
+		    float: right;
 		    padding-right: 2%;
 		    text-align: center;
 
@@ -180,11 +181,9 @@ header {
 			}
 			nav {
 				ul {
-					:first-child{
-			    		padding-left: $PaddingLeft600;
-			    	}
+					
 			    	li{
-			    		float: left;
+			    		float: right;
 			    		text-align: center;
 			    		a{
 			    			font-size: 25px;
@@ -249,12 +248,14 @@ header {
 				ul {
 					:first-child{
 			    		padding-left: 3%;
+			    		padding-right: $PaddingRight1000;
 			    	}
 			    	:last-child{
 			    		padding-right: $PaddingRight1000;
 			    		padding-left: 0%;
 			    	}
 			    	li {
+			    		float: right;
 			    		padding-right: 3%;
 					}
 			    }
@@ -276,9 +277,7 @@ header {
 			}
 			nav {
 				ul {
-					:first-child{
-			    		padding-left: 15%;
-			    	}
+					
 			    	
 			    	li {
 			    		padding-right: 5%;
@@ -301,7 +300,7 @@ main {
 			display: flex;
 			flex-wrap: wrap;
 			padding-left: $initialPaddingLeft;
-			padding-right: $initialPaddingRight;
+			padding-right: $PaddingRight;
 			padding-bottom: 30px;
 			
 

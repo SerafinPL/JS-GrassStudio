@@ -43,12 +43,12 @@ header {
       margin: 0;
       padding: 0; }
       header nav ul :first-child {
-        padding-left: 3%; }
+        padding-left: 3%;
+        padding-right: 5%; }
       header nav ul :last-child {
-        padding-right: 3%;
         padding-left: 0%; }
       header nav ul li {
-        float: left;
+        float: right;
         padding-right: 2%;
         text-align: center; }
         header nav ul li a {
@@ -125,10 +125,8 @@ header {
     header h1 {
       padding-top: 77px;
       padding-left: 8.35%; }
-    header nav ul :first-child {
-      padding-left: 8.35%; }
     header nav ul li {
-      float: left;
+      float: right;
       text-align: center; }
       header nav ul li a {
         font-size: 25px; }
@@ -166,17 +164,17 @@ header {
   header nav {
     padding-top: 90px; }
     header nav ul :first-child {
-      padding-left: 3%; }
+      padding-left: 3%;
+      padding-right: 3.5%; }
     header nav ul :last-child {
-      padding-right: 5%;
+      padding-right: 3.5%;
       padding-left: 0%; }
     header nav ul li {
+      float: right;
       padding-right: 3%; } }
 @media only screen and (min-width: 1350px) {
   header h1 {
     padding-left: 8.35%; }
-  header nav ul :first-child {
-    padding-left: 15%; }
   header nav ul li {
     padding-right: 5%; } }
 /*--- MAIN ---*/
@@ -185,7 +183,7 @@ main .firstSection, main .secondSection {
   display: flex;
   flex-wrap: wrap;
   padding-left: 3%;
-  padding-right: 3%;
+  padding-right: 5%;
   padding-bottom: 30px; }
   main .firstSection div, main .secondSection div {
     flex: 1 1 200px;
@@ -236,7 +234,7 @@ main h3 {
 @media only screen and (min-width: 1000px) {
   main .firstSection, main .secondSection {
     padding-left: 5%;
-    padding-right: 5%; } }
+    padding-right: 3.5%; } }
 @media only screen and (min-width: 1350px) {
   main .firstSection, main .secondSection {
     padding-left: 8.35%;
