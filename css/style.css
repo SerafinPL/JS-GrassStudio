@@ -239,6 +239,30 @@ main h3 {
   main .firstSection, main .secondSection {
     padding-left: 8.35%;
     padding-right: 5%; } }
+/*---- GALLERY ----*/
+.gallery {
+  display: flex; }
+  .gallery .photo {
+    flex: 1 1 200px; }
+  .gallery #img1 {
+    background-image: url("../assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"); }
+  .gallery #img2 {
+    background-image: url("../assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg"); }
+  .gallery #img3 {
+    background-image: url("../assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg"); }
+  .gallery #img4 {
+    background-image: url("../assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg"); }
+  .gallery #img5 {
+    background-image: url("../assets/fotolia_170367715.png"); }
+  .gallery #img6 {
+    background-image: url("../assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg"); }
+  .gallery #img7 {
+    background-image: url("../assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg"); }
+  .gallery #img8 {
+    background-image: url("../assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg"); }
+  .gallery #img9 {
+    background-image: url("../assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg"); }
+
 /*--- FOOTER ---*/
 
 /*# sourceMappingURL=style.css.map */
