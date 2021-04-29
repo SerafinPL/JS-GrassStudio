@@ -4,7 +4,7 @@
 /*--- MAIN CLASSES---*/
 
 
-
+$initialPaddingLeft: 3%;
 
 
 /*--- HEADER ORAZ MENU ---*/
@@ -20,7 +20,7 @@ header {
 	
 	h1{
 		padding-top: 25px;
-		padding-left: 8.35%;
+		padding-left: $initialPaddingLeft;
 		font-size: 50px;
 		letter-spacing: 1px;
 		line-height: 75px;
@@ -40,9 +40,10 @@ header {
 	    display: block;
 	    margin: 0;
 	    padding: 0;
+
 	    
 	    :first-child{
-	    	padding-left: 8.35%;
+	    	padding-left: $initialPaddingLeft;
 	    }
 
 	    :last-child{
@@ -54,6 +55,7 @@ header {
 	    li {
 		    float: left;
 		    padding-right: 2%;
+		    text-align: left;
 
 		    
 
@@ -65,10 +67,38 @@ header {
 				font-weight: 800;
 				font-family: "Open Sans";
 		    }
+
+		    
+		    }
 	  	}
 	  }
 
-	  	  
+	.dropdown{
+		    	background-color: #dfdede;
+		    	width: 80px;
+		    	height: 115px;
+		    	text-align: center;
+		    	padding-top:10px;
+		    	border-radius: 5px;
+		    	box-shadow: 0 5px 5px #ccc;
+		    	display: block; 
+
+
+		    	li{
+		    		
+		    		font-size: 16px;
+					letter-spacing: 0px;
+					line-height: 25px;
+					color: #000000;
+					font-weight: 700;
+		    		
+		    		clear: both;
+		    		padding: 0;
+		    		text-align: center;
+		    		width: 100%;
+		    	}  	
+
+
 	}/*nav*/
 
 	div {
@@ -133,12 +163,24 @@ header {
 			    		padding-left: 8.35%;
 			    	}
 			    	li{
+			    		float: left;
+			    		text-align: center;
 			    		a{
 			    			font-size: 25px;
 
 			    		}
-			    	}
+			    		
+					 }
 			    }
+
+			    .dropdown{
+			    		width: 150px;
+		    			height: 180px;
+	    		    	li{
+	    					line-height: 40px;
+				    		font-size: 25px;
+				    	}
+					    }
    
 			}	
 			div {
@@ -167,90 +209,48 @@ header {
 }
 
 
-@media only screen and (min-width: 900px) {
-	header{
-			h1{ 
-				padding-left: 5%;
-				display: inline-block;
-				width: auto;
-				float: left;
-			}
-			nav {
-				padding-top: 90px;
-				ul {
-					:first-child{
-			    		padding-left: 5%;
-			    	}
-			    	:last-child{
-			    		padding-right: 0%;
-			    		padding-left: 0%;
-			    	}
-			    	li {
-			    		padding-right: 4%;
-					}
-			    }
-   
-				}	
-			}
-}
-
-@media only screen and (min-width: 900px) {
-	header{
-			h1{ 
-				padding-left: 5%;
-				display: inline-block;
-				width: auto;
-				float: left;
-			}
-			nav {
-				padding-top: 90px;
-				ul {
-					:first-child{
-			    		padding-left: 5%;
-			    	}
-			    	:last-child{
-			    		padding-right: 0%;
-			    		padding-left: 0%;
-			    	}
-			    	li {
-			    		padding-right: 4%;
-					}
-			    }
-   
-				}	
-			}
-}
-
-
-
 @media only screen and (min-width: 1000px) {
 	header{
 			h1{ 
 				padding-left: 5%;
 				display: inline-block;
+				width: auto;
+				float: left;
 			}
 			nav {
+				padding-top: 90px;
 				ul {
 					:first-child{
-			    		padding-left: 14%;
+			    		padding-left: 5%;
 			    	}
-			    	
+			    	:last-child{
+			    		padding-right: 0%;
+			    		padding-left: 0%;
+			    	}
+			    	li {
+			    		padding-right: 4%;
+					}
 			    }
    
-			}	
-	}
+				}	
+			}
 }
+
+
+
+
+
 
 @media only screen and (min-width: 1350px) {
 	header{
 			h1{ 
 				padding-left: 8.35%;
-				display: inline-block;
+				
 			}
 			nav {
 				ul {
 					:first-child{
-			    		padding-left: 17.72%;
+			    		padding-left: 15%;
 			    	}
 			    	
 			    	li {
@@ -268,6 +268,30 @@ header {
 
 /*--- MAIN ---*/
 
+main {
+		.firstSection{
+
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: $initialPaddingLeft;
+			h3{
+				font-size: 49px;
+				letter-spacing: 0px;
+				line-height: 86px;
+				color: #53686c;
+				font-weight: 700;
+				flex-shrink: 10;
+				width: 100%;
+			}
+
+			div{
+				flex: 1 1 200px;
+
+			}
+
+		}
+
+	}/*main*/
 
 
 	

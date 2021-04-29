@@ -24,7 +24,7 @@ header {
   /*nav*/ }
   header h1 {
     padding-top: 25px;
-    padding-left: 8.35%;
+    padding-left: 3%;
     font-size: 50px;
     letter-spacing: 1px;
     line-height: 75px;
@@ -43,13 +43,14 @@ header {
       margin: 0;
       padding: 0; }
       header nav ul :first-child {
-        padding-left: 8.35%; }
+        padding-left: 3%; }
       header nav ul :last-child {
         padding-right: 3%;
         padding-left: 0%; }
       header nav ul li {
         float: left;
-        padding-right: 2%; }
+        padding-right: 2%;
+        text-align: left; }
         header nav ul li a {
           font-size: 16px;
           letter-spacing: 0px;
@@ -57,6 +58,25 @@ header {
           color: #000000;
           font-weight: 800;
           font-family: "Open Sans"; }
+  header .dropdown {
+    background-color: #dfdede;
+    width: 80px;
+    height: 115px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #ccc;
+    display: block; }
+    header .dropdown li {
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 25px;
+      color: #000000;
+      font-weight: 700;
+      clear: both;
+      padding: 0;
+      text-align: center;
+      width: 100%; }
   header div {
     position: absolute;
     right: 2%;
@@ -102,8 +122,17 @@ header {
       padding-left: 8.35%; }
     header nav ul :first-child {
       padding-left: 8.35%; }
-    header nav ul li a {
-      font-size: 25px; }
+    header nav ul li {
+      float: left;
+      text-align: center; }
+      header nav ul li a {
+        font-size: 25px; }
+    header nav .dropdown {
+      width: 150px;
+      height: 180px; }
+      header nav .dropdown li {
+        line-height: 40px;
+        font-size: 25px; }
     header div {
       right: 11%;
       bottom: 10%;
@@ -119,51 +148,45 @@ header {
         width: 167px;
         height: 47px;
         margin-top: 10px; } }
-@media only screen and (min-width: 900px) {
-  header h1 {
-    padding-left: 5%;
-    display: inline-block;
-    width: auto;
-    float: left; }
-  header nav {
-    padding-top: 90px; }
-    header nav ul :first-child {
-      padding-left: 5%; }
-    header nav ul :last-child {
-      padding-right: 0%;
-      padding-left: 0%; }
-    header nav ul li {
-      padding-right: 4%; } }
-@media only screen and (min-width: 900px) {
-  header h1 {
-    padding-left: 5%;
-    display: inline-block;
-    width: auto;
-    float: left; }
-  header nav {
-    padding-top: 90px; }
-    header nav ul :first-child {
-      padding-left: 5%; }
-    header nav ul :last-child {
-      padding-right: 0%;
-      padding-left: 0%; }
-    header nav ul li {
-      padding-right: 4%; } }
 @media only screen and (min-width: 1000px) {
   header h1 {
     padding-left: 5%;
-    display: inline-block; }
-  header nav ul :first-child {
-    padding-left: 14%; } }
+    display: inline-block;
+    width: auto;
+    float: left; }
+  header nav {
+    padding-top: 90px; }
+    header nav ul :first-child {
+      padding-left: 5%; }
+    header nav ul :last-child {
+      padding-right: 0%;
+      padding-left: 0%; }
+    header nav ul li {
+      padding-right: 4%; } }
 @media only screen and (min-width: 1350px) {
   header h1 {
-    padding-left: 8.35%;
-    display: inline-block; }
+    padding-left: 8.35%; }
   header nav ul :first-child {
-    padding-left: 17.72%; }
+    padding-left: 15%; }
   header nav ul li {
     padding-right: 5%; } }
 /*--- MAIN ---*/
+main .firstSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3%; }
+  main .firstSection h3 {
+    font-size: 49px;
+    letter-spacing: 0px;
+    line-height: 86px;
+    color: #53686c;
+    font-weight: 700;
+    flex-shrink: 10;
+    width: 100%; }
+  main .firstSection div {
+    flex: 1 1 200px; }
+
+/*main*/
 /*--- FOOTER ---*/
 
 /*# sourceMappingURL=style.css.map */
