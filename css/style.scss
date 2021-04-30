@@ -27,37 +27,39 @@ $PaddingRight1350: 5%;
 	background-color: #fff;
 	display: none;
 
-	.CancelButton{
-	position: fixed;
-	width: 21px;
-	height: 21px;
-	padding: 1px;
-	float: right;
-	margin-left: 1px;
-	cursor: pointer;
+	#CancelButton{
+		position: fixed;
+		width: 21px;
+		height: 21px;
+		padding: 1px;
+		float: right;
+		margin-left: 1px;
+		cursor: pointer;
+		right: 10px;
+		top:10px;
 
-	&:before, &:after {
-		position: absolute;
-		top:9px;
-		width: 16px;
-		height: 16px;
-		
-		content: '';
+		&:before, &:after {
+			position: absolute;
+			top:9px;
+			width: 16px;
+			height: 16px;
+			
+			content: '';
+		}
+
+		&:before{
+			transform: rotate(45deg);
+			border-left: 1px solid #000;
+			left: 8px;
+		}
+
+		&:after{
+			transform: rotate(-45deg);
+			border-right: 1px solid #000;
+			left: -3px;
+		}
+
 	}
-
-	&:before{
-		transform: rotate(45deg);
-		border-left: 1px solid #000;
-		left: 8px;
-	}
-
-	&:after{
-		transform: rotate(-45deg);
-		border-right: 1px solid #000;
-		left: -3px;
-	}
-
-}
 }
 
 #lightboxPhoto{

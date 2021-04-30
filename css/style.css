@@ -21,25 +21,27 @@
   left: 0px;
   background-color: #fff;
   display: none; }
-  #lightbox .CancelButton {
+  #lightbox #CancelButton {
     position: fixed;
     width: 21px;
     height: 21px;
     padding: 1px;
     float: right;
     margin-left: 1px;
-    cursor: pointer; }
-    #lightbox .CancelButton:before, #lightbox .CancelButton:after {
+    cursor: pointer;
+    right: 10px;
+    top: 10px; }
+    #lightbox #CancelButton:before, #lightbox #CancelButton:after {
       position: absolute;
       top: 9px;
       width: 16px;
       height: 16px;
       content: ''; }
-    #lightbox .CancelButton:before {
+    #lightbox #CancelButton:before {
       transform: rotate(45deg);
       border-left: 1px solid #000;
       left: 8px; }
-    #lightbox .CancelButton:after {
+    #lightbox #CancelButton:after {
       transform: rotate(-45deg);
       border-right: 1px solid #000;
       left: -3px; }
