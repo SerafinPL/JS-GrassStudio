@@ -21,6 +21,28 @@
   left: 0px;
   background-color: #fff;
   display: none; }
+  #lightbox .CancelButton {
+    position: fixed;
+    width: 21px;
+    height: 21px;
+    padding: 1px;
+    float: right;
+    margin-left: 1px;
+    cursor: pointer; }
+    #lightbox .CancelButton:before, #lightbox .CancelButton:after {
+      position: absolute;
+      top: 9px;
+      width: 16px;
+      height: 16px;
+      content: ''; }
+    #lightbox .CancelButton:before {
+      transform: rotate(45deg);
+      border-left: 1px solid #000;
+      left: 8px; }
+    #lightbox .CancelButton:after {
+      transform: rotate(-45deg);
+      border-right: 1px solid #000;
+      left: -3px; }
 
 #lightboxPhoto {
   width: 80vw;
@@ -57,16 +79,22 @@ header {
       list-style-type: none;
       display: block;
       margin: 0;
-      padding: 0; }
-      header nav ul :first-child {
-        padding-left: 3%;
-        padding-right: 5%; }
-      header nav ul :last-child {
-        padding-left: 0%; }
+      padding: 0;
+      	   /* :first-child{
+      	    	padding-left: $initialPaddingLeft;
+      	    	padding-right: $PaddingRight;
+      	    }
+      
+      	    :last-child{
+      	    	
+      	    	padding-left: 0%;
+      	    }
+      */ }
       header nav ul li {
         float: right;
         padding-right: 2%;
-        text-align: center; }
+        text-align: center;
+        width: 80px; }
         header nav ul li a {
           font-size: 0.8em;
           letter-spacing: 0px;
@@ -75,7 +103,7 @@ header {
           font-family: "Open Sans"; }
   header .dropdown {
     background-color: #dfdede;
-    width: 80px;
+    width: 70px;
     height: 100px;
     text-align: center;
     padding-top: 0px;
@@ -96,7 +124,7 @@ header {
         padding: 0px;
         line-height: 0px; }
   header .haveDropdown {
-    width: 150px; }
+    width: 70px; }
   header .cursorP {
     cursor: pointer; }
   header div {
@@ -145,21 +173,25 @@ header {
     header h1 {
       padding-top: 77px;
       padding-left: 8.35%; }
-    header nav ul li {
-      float: right;
-      text-align: center; }
-      header nav ul li a {
-        font-size: 25px; }
-    header nav .dropdown {
-      width: 150px;
-      height: 180px;
-      padding-top: 10px; }
-      header nav .dropdown li {
-        line-height: 40px;
-        font-size: 25px; }
-        header nav .dropdown li a {
-          padding: 0px;
-          line-height: 0px; }
+    header nav {
+      padding-right: 50px; }
+      header nav ul li {
+        float: right;
+        text-align: center; }
+        header nav ul li a {
+          font-size: 25px; }
+      header nav .dropdown {
+        width: 150px;
+        height: 180px;
+        padding-top: 10px; }
+        header nav .dropdown li {
+          line-height: 40px;
+          font-size: 25px; }
+          header nav .dropdown li a {
+            padding: 0px;
+            line-height: 0px; }
+      header nav .haveDropdown {
+        width: 150px; }
     header div {
       right: 11%;
       bottom: 10%;
@@ -182,7 +214,7 @@ header {
     width: auto;
     float: left; }
   header nav {
-    padding-top: 90px; }
+    padding-top: 105px; }
     header nav ul :first-child {
       padding-left: 3%;
       padding-right: 3.5%; }

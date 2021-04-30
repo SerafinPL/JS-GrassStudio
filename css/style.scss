@@ -27,7 +27,37 @@ $PaddingRight1350: 5%;
 	background-color: #fff;
 	display: none;
 
+	.CancelButton{
+	position: fixed;
+	width: 21px;
+	height: 21px;
+	padding: 1px;
+	float: right;
+	margin-left: 1px;
+	cursor: pointer;
 
+	&:before, &:after {
+		position: absolute;
+		top:9px;
+		width: 16px;
+		height: 16px;
+		
+		content: '';
+	}
+
+	&:before{
+		transform: rotate(45deg);
+		border-left: 1px solid #000;
+		left: 8px;
+	}
+
+	&:after{
+		transform: rotate(-45deg);
+		border-right: 1px solid #000;
+		left: -3px;
+	}
+
+}
 }
 
 #lightboxPhoto{
@@ -63,6 +93,7 @@ header {
 
 	nav {
 	  	padding-top: 10px;
+	  	
 	  	/*padding-right: 8vw;*/
 		display: block;
 	  ul {
@@ -72,7 +103,7 @@ header {
 	    padding: 0;
 
 	    
-	    :first-child{
+	   /* :first-child{
 	    	padding-left: $initialPaddingLeft;
 	    	padding-right: $PaddingRight;
 	    }
@@ -81,12 +112,13 @@ header {
 	    	
 	    	padding-left: 0%;
 	    }
-
+*/
 
 	    li {
 		    float: right;
 		    padding-right: 2%;
 		    text-align: center;
+		    width:80px;
 
 		    
 
@@ -106,7 +138,7 @@ header {
 
 	.dropdown{
 		    	background-color: #dfdede;
-		    	width: 80px;
+		    	width: 70px;
 		    	height: 100px;
 		    	text-align: center;
 		    	padding-top:0px;
@@ -138,7 +170,7 @@ header {
 	}
 
 	.haveDropdown {
-		width: 150px;
+		width:70px;
 	}
 
 	.cursorP{
@@ -208,6 +240,7 @@ header {
 				
 			}
 			nav {
+				padding-right: 50px;
 				ul {
 					
 			    	li{
@@ -234,7 +267,11 @@ header {
 				    			line-height: 0px;
 				    		}
 				    	}
-					    }
+				}
+
+				.haveDropdown {
+					width:150px;
+				}
    
 			}	
 			div {
@@ -272,7 +309,7 @@ header {
 				float: left;
 			}
 			nav {
-				padding-top: 90px;
+				padding-top: 105px;
 				ul {
 					:first-child{
 			    		padding-left: 3%;
