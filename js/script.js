@@ -15,14 +15,14 @@ function hideDropDown() {
 
 function showLightBox(event) {
 	// body...
-	console.log(this.style.backgroundImage)
-	img = this;
-	style = img.currentStyle || window.getComputedStyle(img, false),
-	bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-	console.log(bi)
-	document.getElementById('lightboxPhoto').getAttributeNode("src").value = bi;
 	
+	style = this.currentStyle || window.getComputedStyle(this, false);
+	biurl = style.backgroundImage.slice(4, -1).replace(/"/g, "");
 	
+	document.getElementById('lightboxPhoto').getAttributeNode("src").value = biurl;
+
+
+	document.getElementById('lightbox').style.display = 'block';
 	
 }
 
