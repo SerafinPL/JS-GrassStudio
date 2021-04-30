@@ -65,7 +65,7 @@ header {
     padding-top: 0px;
     border-radius: 5px;
     box-shadow: 0 5px 5px #ccc;
-    display: block; }
+    display: none; }
     header .dropdown li {
       font-size: 0.8em;
       letter-spacing: 0px;
@@ -79,6 +79,8 @@ header {
       header .dropdown li a {
         padding: 0px;
         line-height: 0px; }
+  header .haveDropdown {
+    width: 150px; }
   header div {
     position: absolute;
     right: 2%;
@@ -252,7 +254,8 @@ main h3 {
   .gallery .photo {
     height: 400px;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    cursor: pointer; }
   .gallery #img1 {
     background-image: url("../assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg"); }
   .gallery #img2 {
@@ -301,5 +304,15 @@ footer {
     line-height: 28px;
     color: #fffefe;
     font-weight: 400; }
+
+@media only screen and (min-width: 600px) {
+  footer p {
+    padding-left: 8.35%; } }
+@media only screen and (min-width: 1000px) {
+  footer p {
+    padding-left: 5%; } }
+@media only screen and (min-width: 1350px) {
+  footer p {
+    padding-left: 8.35%; } }
 
 /*# sourceMappingURL=style.css.map */

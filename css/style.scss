@@ -82,7 +82,7 @@ header {
 		    
 		    }
 	  	}
-	  }
+	  }/*nav*/
 
 	.dropdown{
 		    	background-color: #dfdede;
@@ -92,7 +92,7 @@ header {
 		    	padding-top:0px;
 		    	border-radius: 5px;
 		    	box-shadow: 0 5px 5px #ccc;
-		    	display: block; 
+		    	display: none; 
 
 
 		    	li{
@@ -115,7 +115,11 @@ header {
 		    	}  	
 
 
-	}/*nav*/
+	}
+
+	.haveDropdown {
+		width: 150px;
+	}
 
 	div {
 		position: absolute;
@@ -420,12 +424,11 @@ main {
   		padding-top: 25px;
   		padding-bottom: 325px;
 
-
-
 		.photo{
 			height: 400px;
 			background-size: cover;
 			background-position: center;
+			cursor: pointer;
 		}
 
 
@@ -502,6 +505,30 @@ footer {
 		font-weight: 400;
 	}
 	
+}
+
+@media only screen and (min-width: 600px){
+	footer {
+		p{
+			padding-left: $PaddingLeft600;
+		}
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	footer {
+		p{
+			padding-left: $PaddingLeft1000;
+		}
+	}
+}
+
+@media only screen and (min-width: 1350px){
+	footer {
+		p{
+			padding-left: $PaddingLeft1350;
+		}
+	}
 }
 
 
