@@ -81,6 +81,8 @@ header {
         line-height: 0px; }
   header .haveDropdown {
     width: 150px; }
+  header .cursorP {
+    cursor: pointer; }
   header div {
     position: absolute;
     right: 2%;
