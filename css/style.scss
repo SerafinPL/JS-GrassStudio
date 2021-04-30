@@ -17,6 +17,17 @@ $PaddingLeft1350: 8.35%;
 $PaddingRight1350: 5%;
 
 
+#lightbox{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+	top: 0px;
+	left: 0px;
+	background-color: #fff;
+	display: none;
+}
+
 /*--- HEADER ORAZ MENU ---*/
 
 header {
