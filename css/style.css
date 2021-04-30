@@ -49,6 +49,7 @@
 #lightboxPhoto {
   width: 80vw;
   height: auto;
+  max-height: 80vh;
   margin: 5% auto;
   display: block; }
 
