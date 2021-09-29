@@ -49,9 +49,10 @@
 #lightboxPhoto {
   width: 80vw;
   height: auto;
-  max-height: 80vh;
+  /*max-height: 80vh;*/
   margin: 5% auto;
-  display: block; }
+  /*display: block;*/
+  align-self: center; }
 
 /*--- HEADER ORAZ MENU ---*/
 header {
@@ -96,7 +97,7 @@ header {
 */ }
       header nav ul li {
         float: right;
-        padding-right: 2%;
+        /*padding-right: 2%;*/
         text-align: center;
         flex-basis: 150px;
         text-align: center; }

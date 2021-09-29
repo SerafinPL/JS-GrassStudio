@@ -13,7 +13,7 @@ function showLightBox() {
 	biurl = style.backgroundImage.slice(4, -1).replace(/"/g, "");
 	
 	document.getElementById('lightboxPhoto').getAttributeNode("src").value = biurl;
-	document.getElementById('lightbox').style.display = 'block';
+	document.getElementById('lightbox').style.display = 'flex';
 }
 
 let elements = document.getElementsByClassName('haveDropdown');
