@@ -1,8 +1,6 @@
-@import 'reset';
-
+@import "reset";
 
 /*--- MAIN CLASSES---*/
-
 
 $initialPaddingLeft: 3%;
 $PaddingRight: 5%;
@@ -16,97 +14,96 @@ $PaddingRight1000: 3.5%;
 $PaddingLeft1350: 8.35%;
 $PaddingRight1350: 5%;
 
+#lightbox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  display: none;
 
-#lightbox{
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	z-index: 5;
-	top: 0px;
-	left: 0px;
-	background-color: #fff;
-	display: none;
+  #CancelButton {
+    position: fixed;
+    width: 21px;
+    height: 21px;
+    padding: 1px;
+    float: right;
+    margin-left: 1px;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
 
-	#CancelButton{
-		position: fixed;
-		width: 21px;
-		height: 21px;
-		padding: 1px;
-		float: right;
-		margin-left: 1px;
-		cursor: pointer;
-		right: 10px;
-		top:10px;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 9px;
+      width: 16px;
+      height: 16px;
 
-		&:before, &:after {
-			position: absolute;
-			top:9px;
-			width: 16px;
-			height: 16px;
-			
-			content: '';
-		}
+      content: "";
+    }
 
-		&:before{
-			transform: rotate(45deg);
-			border-left: 1px solid #000;
-			left: 8px;
-		}
+    &:before {
+      transform: rotate(45deg);
+      border-left: 1px solid #000;
+      left: 8px;
+    }
 
-		&:after{
-			transform: rotate(-45deg);
-			border-right: 1px solid #000;
-			left: -3px;
-		}
-
-	}
+    &:after {
+      transform: rotate(-45deg);
+      border-right: 1px solid #000;
+      left: -3px;
+    }
+  }
 }
 
-#lightboxPhoto{
-	width: 80vw;
-	height: auto;
-	max-height: 80vh;
-	margin: 5% auto;
-	display: block;
+#lightboxPhoto {
+  width: 80vw;
+  height: auto;
+  max-height: 80vh;
+  margin: 5% auto;
+  display: block;
 }
 
 /*--- HEADER ORAZ MENU ---*/
 
 header {
-	background-image: url('../assets/seacost.jpg');
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../assets/seacost.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  position: relative;
+
+  h1 {
+    padding-top: 25px;
+    padding-left: $initialPaddingLeft;
+    font-size: 50px;
+    letter-spacing: 1px;
+    line-height: 75px;
+    color: #000000;
+    font-weight: 800;
+    font-family: "Open Sans";
+    display: block;
     width: 100%;
-    height: 700px;
-    position: relative;
-	
-	h1{
-		padding-top: 25px;
-		padding-left: $initialPaddingLeft;
-		font-size: 50px;
-		letter-spacing: 1px;
-		line-height: 75px;
-		color: #000000;
-		font-weight: 800;
-		font-family: "Open Sans";
-		display: block;
-		width: 100%;
-	}
+  }
 
-	nav {
-	  	padding-top: 10px;
-	  	
-	  	/*padding-right: 8vw;*/
-		display: block;
-	  ul {
-	    list-style-type: none;
-	    display: block;
-	    margin: 0;
-	    padding: 0;
+  nav {
+    padding-top: 10px;
 
-	    
-	   /* :first-child{
+    /*padding-right: 8vw;*/
+    display: block;
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-direction: row-reverse;
+
+      /* :first-child{
 	    	padding-left: $initialPaddingLeft;
 	    	padding-right: $PaddingRight;
 	    }
@@ -117,483 +114,422 @@ header {
 	    }
 */
 
-	    li {
-		    float: right;
-		    padding-right: 2%;
-		    text-align: center;
-		    width:80px;
+      li {
+        float: right;
+        padding-right: 2%;
+        text-align: center;
+        flex-basis: 150px;
+        text-align: center;
 
-		    
+        a {
+          font-size: 0.8em;
+          letter-spacing: 0px;
 
-		    a{
-		    	font-size: 0.8em;
-				letter-spacing: 0px;
-				
-				color: #000000;
-				font-weight: 800;
-				font-family: "Open Sans";
-		    }
+          color: #000000;
+          font-weight: 800;
+          font-family: "Open Sans";
+        }
+      }
+    }
+  } /*nav*/
 
-		    
-		    }
-	  	}
-	  }/*nav*/
+  .dropdown {
+    background-color: #dfdede;
+    width: 70px;
+    height: 100px;
+    text-align: center;
+    padding-top: 0px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #ccc;
+    display: none;
 
-	.dropdown{
-		    	background-color: #dfdede;
-		    	width: 70px;
-		    	height: 100px;
-		    	text-align: center;
-		    	padding-top:0px;
-		    	border-radius: 5px;
-		    	box-shadow: 0 5px 5px #ccc;
-		    	display: none; 
+    li {
+      font-size: 0.8em;
+      letter-spacing: 0px;
+      line-height: 25px;
+      color: #000000;
+      font-weight: 700;
 
+      clear: both;
+      padding: 0;
+      text-align: center;
+      width: 100%;
 
-		    	li{
-		    		
-		    		font-size: 0.8em;
-					letter-spacing: 0px;
-					line-height: 25px;
-					color: #000000;
-					font-weight: 700;
-		    		
-		    		clear: both;
-		    		padding: 0;
-		    		text-align: center;
-		    		width: 100%;
+      a {
+        padding: 0px;
+        line-height: 0px;
+      }
+    }
+  }
 
-		    		a{
-		    			padding: 0px;
-		    			line-height: 0px;
-		    		}
-		    	}  	
+  .haveDropdown {
+    width: 70px;
+  }
 
+  .cursorP {
+    cursor: pointer;
+  }
 
-	}
+  div {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    width: 270px;
 
-	.haveDropdown {
-		width:70px;
-	}
+    h2 {
+      font-size: 35px;
+      letter-spacing: 1px;
+      line-height: 55px;
+      color: #ffffff;
+      font-weight: 800;
+      width: 260px;
+    }
 
-	.cursorP{
-		cursor: pointer;
-	}
+    span {
+      display: inline-block;
+      width: 120px;
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 32px;
+      color: #ffffff;
+      font-weight: 600;
+    }
 
-	div {
-		position: absolute;
-		right:2%;
-		bottom: 5%;
-		width: 270px;
-		
+    a {
+      float: right;
+      width: 148px;
+      height: 47px;
+      text-align: center;
+      padding: 15px 0px 15px 0px;
+      border: 2px solid #fff;
+      font-size: 24px;
+      letter-spacing: 0px;
+      line-height: 16px;
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+      margin-top: 70px;
+      border-radius: 25px;
 
-		h2{
-		font-size: 35px;
-		letter-spacing: 1px;
-		line-height: 55px;
-		color: #ffffff;
-		font-weight: 800;
-		width: 260px;
-		
-		}
-
-		span{
-			display: inline-block;
-			width: 120px;
-			font-size: 16px;
-			letter-spacing: 0px;
-			line-height: 32px;
-			color: #ffffff;
-			font-weight: 600;
-		}
-
-		a{
-			float: right;
-			width: 148px;
-			height: 47px;
-			text-align: center;
-			padding: 15px 0px 15px 0px;
-			border: 2px solid #FFF;
-			font-size: 24px;
-			letter-spacing: 0px;
-			line-height: 16px;
-			color: #ffffff;
-			font-weight: 800;
-			text-decoration: none;
-			margin-top: 70px; 
-			border-radius: 25px;
-
-			&:hover{
-					background-color: #fff;
-					color: #000;
-					
-				}
-		}
-	}
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
 } /*header*/
 
-
-
 @media only screen and (min-width: 600px) {
-	header{
-			height: 761px;
-			h1{ 
-				padding-top: 77px;
-				padding-left: $PaddingLeft600;
-				
-			}
-			nav {
-				padding-right: 50px;
-				ul {
-					
-			    	li{
-			    		float: right;
-			    		text-align: center;
-			    		a{
-			    			font-size: 25px;
+  header {
+    height: 761px;
+    h1 {
+      padding-top: 77px;
+      padding-left: $PaddingLeft600;
+    }
+    nav {
+      padding-right: 50px;
+      ul {
+        li {
+          float: right;
+          text-align: center;
+          a {
+            font-size: 25px;
+          }
+        }
+      }
 
-			    		}
-			    		
-					 }
-			    }
+      .dropdown {
+        width: 150px;
+        height: 180px;
+        padding-top: 10px;
+        li {
+          line-height: 40px;
+          font-size: 25px;
 
-			    .dropdown{
-			    		width: 150px;
-		    			height: 180px;
-		    			padding-top:10px;
-	    		    	li{
-	    					line-height: 40px;
-				    		font-size: 25px;
+          a {
+            padding: 0px;
+            line-height: 0px;
+          }
+        }
+      }
 
-				    		a{
-				    			padding: 0px;
-				    			line-height: 0px;
-				    		}
-				    	}
-				}
-
-				.haveDropdown {
-					width:150px;
-				}
-   
-			}	
-			div {
-				
-				right:11%;
-				bottom: 10%;
-				width: 444px;
-				h2{
-					font-size: 50px;
-					width: 366px;
-				}
-				span{ 
-					font-size: 21px;
-					width: 250px;
-				}
-				a{
-					font-size: 24px;
-					width: 167px;
-					height: 47px;
-					margin-top: 10px;
-				}
-
-
-			}
-		}
+      .haveDropdown {
+        width: 150px;
+      }
+    }
+    div {
+      right: 11%;
+      bottom: 10%;
+      width: 444px;
+      h2 {
+        font-size: 50px;
+        width: 366px;
+      }
+      span {
+        font-size: 21px;
+        width: 250px;
+      }
+      a {
+        font-size: 24px;
+        width: 167px;
+        height: 47px;
+        margin-top: 10px;
+      }
+    }
+  }
 }
-
 
 @media only screen and (min-width: 1000px) {
-	header{
-			h1{ 
-				padding-left: $PaddingLeft1000;
-				display: inline-block;
-				width: auto;
-				float: left;
-			}
-			nav {
-				padding-top: 105px;
-				ul {
-					:first-child{
-			    		padding-left: 3%;
-			    		padding-right: $PaddingRight1000;
-			    	}
-			    	:last-child{
-			    		padding-right: $PaddingRight1000;
-			    		padding-left: 0%;
-			    	}
-			    	li {
-			    		float: right;
-			    		padding-right: 3%;
-					}
-			    }
-   
-				}	
-			}
+  header {
+    h1 {
+      padding-left: $PaddingLeft1000;
+      display: inline-block;
+      width: auto;
+      float: left;
+    }
+    nav {
+      padding-top: 105px;
+      /*ul {
+        :first-child {
+          padding-left: 3%;
+          padding-right: $PaddingRight1000;
+        }
+        :last-child {
+          padding-right: $PaddingRight1000;
+          padding-left: 0%;
+        }
+        li {
+          float: right;
+          padding-right: 3%;
+        }
+      }*/
+    }
+  }
 }
-
-
-
-
-
 
 @media only screen and (min-width: 1350px) {
-	header{
-			h1{ 
-				padding-left: $PaddingLeft1350;
-				
-			}
-			nav {
-				ul {
-					
-			    	
-			    	li {
-			    		padding-right: 5%;
-					}
-			    }
-   
-				}	
-			}
-		  	
+  header {
+    h1 {
+      padding-left: $PaddingLeft1350;
+    }
+    nav {
+      ul {
+        /*li {
+          padding-right: 5%;
+        }*/
+      }
+    }
+  }
 }
-
-
-
 
 /*--- MAIN ---*/
 
 main {
-		.firstSection{
-			padding-top: 30px;
-			display: flex;
-			flex-wrap: wrap;
-			padding-left: $initialPaddingLeft;
-			padding-right: $PaddingRight;
-			padding-bottom: 30px;
-			
+  .firstSection {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: $initialPaddingLeft;
+    padding-right: $PaddingRight;
+    padding-bottom: 30px;
 
+    div {
+      flex: 1 1 200px;
+      padding-right: 4%;
+      padding-top: 5%;
+    }
+  }
 
-			div{
-				flex: 1 1 200px;
-				padding-right: 4%;
-				padding-top: 5%;
-			}
+  .secondSection {
+    @extend .firstSection;
+    background-color: #f9f9f9;
+    display: block;
 
-		}
+    img {
+      float: left;
+      padding-right: 30px;
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+    }
+    div {
+      padding-top: 0%;
+    }
 
-		.secondSection{
-			@extend .firstSection;
-			background-color: #f9f9f9;
-			display: block;
+    div.second {
+      padding-top: 5%;
+    }
 
+    a {
+      display: block;
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      padding: 15px 0px 15px 0px;
+      border: 2px solid #627478;
+      font-size: 24px;
+      letter-spacing: 0px;
+      line-height: 16px;
+      color: #627478;
+      font-weight: 800;
+      text-decoration: none;
 
-			img {
-				float: left;
-				padding-right: 30px;
-				max-width: 350px;
-				width: 100%;
-				height: auto;
-			}
-			div {
-				padding-top: 0%;
-			}
+      border-radius: 25px;
+      margin: 25px auto;
 
-			div.second{
-				padding-top: 5%;
-			}
+      &:hover {
+        background-color: #627478;
+        color: #fff;
+      }
+    }
+  }
 
-			a{
-				display: block;
-				width: 200px;
-				height: 50px;
-				text-align: center;
-				padding: 15px 0px 15px 0px;
-				border: 2px solid #627478;;
-				font-size: 24px;
-				letter-spacing: 0px;
-				line-height: 16px;
-				color: #627478;
-				font-weight: 800;
-				text-decoration: none;
-				
-				border-radius: 25px;
-				margin: 25px auto;
+  h3 {
+    font-size: 49px;
+    letter-spacing: 0px;
+    line-height: 60px;
+    color: #53686c;
+    font-weight: 700;
+    flex-shrink: 10;
+    width: 100%;
+  }
+} /*main*/
 
-				&:hover{
-					background-color: #627478;
-					color: #fff;
-
-				}
-					
-			}
-
-
-			
-		}
-
-		h3{
-			font-size: 49px;
-			letter-spacing: 0px;
-			line-height: 60px;
-			color: #53686c;
-			font-weight: 700;
-			flex-shrink: 10;
-			width: 100%;
-		}
-
-	}/*main*/
-
-
-
-@media only screen and (min-width: 600px){
-	main{
-		.firstSection{
-
-			
-			padding-left: $PaddingLeft600;
-			padding-right: $PaddingRight600;
-		}
-	}
+@media only screen and (min-width: 600px) {
+  main {
+    .firstSection {
+      padding-left: $PaddingLeft600;
+      padding-right: $PaddingRight600;
+    }
+  }
 }
 
-@media only screen and (min-width: 1000px){
-	main{
-		.firstSection{
-
-			
-			padding-left: $PaddingLeft1000;
-			padding-right: $PaddingRight1000;
-		}
-	}
+@media only screen and (min-width: 1000px) {
+  main {
+    .firstSection {
+      padding-left: $PaddingLeft1000;
+      padding-right: $PaddingRight1000;
+    }
+  }
 }
 
-@media only screen and (min-width: 1350px){
-	main{
-		.firstSection{
-
-			
-			padding-left: $PaddingLeft1350;
-			padding-right: $PaddingRight1350;
-		}
-	}
+@media only screen and (min-width: 1350px) {
+  main {
+    .firstSection {
+      padding-left: $PaddingLeft1350;
+      padding-right: $PaddingRight1350;
+    }
+  }
 }
-
 
 /*---- GALLERY ----*/
 
-	.gallery{
-		display: grid;
-		grid-template-columns: auto;
-		grid-row-gap: 1%;
-  		padding-top: 25px;
-  		padding-bottom: 325px;
+.gallery {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 1%;
+  padding-top: 25px;
+  padding-bottom: 325px;
 
-		.photo{
-			height: 400px;
-			background-size: cover;
-			background-position: center;
-			cursor: pointer;
-		}
+  .photo {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
 
+  #img1 {
+    background-image: url("../assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg");
+  }
+  #img2 {
+    background-image: url("../assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg");
+  }
+  #img3 {
+    background-image: url("../assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg");
+  }
+  #img4 {
+    background-image: url("../assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg");
+  }
+  #img5 {
+    background-image: url("../assets/fotolia_170367715.png");
+  }
+  #img6 {
+    background-image: url("../assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg");
+  }
+  #img7 {
+    background-image: url("../assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg");
+  }
+  #img8 {
+    background-image: url("../assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg");
+  }
+  #img9 {
+    background-image: url("../assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg");
+  }
+}
 
-		#img1 {
-			background-image: url('../assets/beach-sea-coast-water-ocean-horizon-15529-pxhere.com.jpg');
-		} 
-		#img2 {
-			background-image: url('../assets/grass-field-farm-lawn-meadow-hill-736197-pxhere.com.jpg');
-		} 
-		#img3 {
-			background-image: url('../assets/hand-outdoor-sand-morning-animal-horse-114552-pxhere.com.jpg');
-		} 
-		#img4 {
-			background-image: url('../assets/landscape-sea-coast-horizon-mountain-snow-1325243-pxhere.com.jpg');
-		} 
-		#img5 {
-			background-image: url('../assets/fotolia_170367715.png');
-		} 
-		#img6 {
-			background-image: url('../assets/snow-winter-city-vehicle-church-iceland-836962-pxhere.com.jpg');
-		} 
-		#img7 {
-			background-image: url('../assets/landscape-sea-nature-ocean-mountain-sky-386319-pxhere.com.jpg');
-		} 
-		#img8 {
-			background-image: url('../assets/sea-coast-water-ocean-bird-animal-136776-pxhere.com.jpg');
-		} 
-		#img9 {
-			background-image: url('../assets/landscape-nature-grass-horizon-wilderness-mountain-946977-pxhere.com.jpg');
-		}
-	}
+@media only screen and (min-width: 600px) {
+  .gallery {
+    padding-top: 35px;
+  }
+}
 
-		@media only screen and (min-width: 600px){
-			.gallery{
-				padding-top: 35px;
-			}
-		}
+@media only screen and (min-width: 1000px) {
+  .gallery {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 3%;
+    grid-row-gap: 3%;
+    padding-bottom: 300px;
+  }
+}
 
-		@media only screen and (min-width: 1000px){
-			.gallery{
-				padding-top: 60px;
-				display: grid;
-		  		grid-template-columns: auto auto;
-		  		grid-column-gap: 3%;
-		  		grid-row-gap: 3%;
-		  		padding-bottom: 300px;
-
-			}
-		}
-
-		@media only screen and (min-width: 1350px){
-			.gallery{
-				padding-top: 75px;
-				display: grid;
-		  		grid-template-columns: auto auto auto;
-		  		grid-column-gap: 5%;
-		  		grid-row-gap: 5%;
-		  		padding-bottom: 200px;
-			}
-		}
-
+@media only screen and (min-width: 1350px) {
+  .gallery {
+    padding-top: 75px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    padding-bottom: 200px;
+  }
+}
 
 /*--- FOOTER ---*/
 
 footer {
-	background-color: #535353;
+  background-color: #535353;
 
-	p{
-		padding: $initialPaddingLeft;
-		font-size: 16px;
-		letter-spacing: 0px;
-		line-height: 28px;
-		color: #fffefe;
-		font-weight: 400;
-	}
-	
+  p {
+    padding: $initialPaddingLeft;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #fffefe;
+    font-weight: 400;
+  }
 }
 
-@media only screen and (min-width: 600px){
-	footer {
-		p{
-			padding-left: $PaddingLeft600;
-		}
-	}
+@media only screen and (min-width: 600px) {
+  footer {
+    p {
+      padding-left: $PaddingLeft600;
+    }
+  }
 }
 
-@media only screen and (min-width: 1000px){
-	footer {
-		p{
-			padding-left: $PaddingLeft1000;
-		}
-	}
+@media only screen and (min-width: 1000px) {
+  footer {
+    p {
+      padding-left: $PaddingLeft1000;
+    }
+  }
 }
 
-@media only screen and (min-width: 1350px){
-	footer {
-		p{
-			padding-left: $PaddingLeft1350;
-		}
-	}
+@media only screen and (min-width: 1350px) {
+  footer {
+    p {
+      padding-left: $PaddingLeft1350;
+    }
+  }
 }
-
-
-

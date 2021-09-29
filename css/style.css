@@ -36,7 +36,7 @@
       top: 9px;
       width: 16px;
       height: 16px;
-      content: ''; }
+      content: ""; }
     #lightbox #CancelButton:before {
       transform: rotate(45deg);
       border-left: 1px solid #000;
@@ -80,24 +80,26 @@ header {
     display: block; }
     header nav ul {
       list-style-type: none;
-      display: block;
+      display: flex;
       margin: 0;
       padding: 0;
-      	   /* :first-child{
-      	    	padding-left: $initialPaddingLeft;
-      	    	padding-right: $PaddingRight;
-      	    }
-      
-      	    :last-child{
-      	    	
-      	    	padding-left: 0%;
-      	    }
-      */ }
+      flex-direction: row-reverse;
+      /* :first-child{
+	    	padding-left: $initialPaddingLeft;
+	    	padding-right: $PaddingRight;
+	    }
+
+	    :last-child{
+	    	
+	    	padding-left: 0%;
+	    }
+*/ }
       header nav ul li {
         float: right;
         padding-right: 2%;
         text-align: center;
-        width: 80px; }
+        flex-basis: 150px;
+        text-align: center; }
         header nav ul li a {
           font-size: 0.8em;
           letter-spacing: 0px;
@@ -156,7 +158,7 @@ header {
       height: 47px;
       text-align: center;
       padding: 15px 0px 15px 0px;
-      border: 2px solid #FFF;
+      border: 2px solid #fff;
       font-size: 24px;
       letter-spacing: 0px;
       line-height: 16px;
@@ -217,21 +219,28 @@ header {
     width: auto;
     float: left; }
   header nav {
-    padding-top: 105px; }
-    header nav ul :first-child {
-      padding-left: 3%;
-      padding-right: 3.5%; }
-    header nav ul :last-child {
-      padding-right: 3.5%;
-      padding-left: 0%; }
-    header nav ul li {
-      float: right;
-      padding-right: 3%; } }
+    padding-top: 105px;
+    /*ul {
+      :first-child {
+        padding-left: 3%;
+        padding-right: $PaddingRight1000;
+      }
+      :last-child {
+        padding-right: $PaddingRight1000;
+        padding-left: 0%;
+      }
+      li {
+        float: right;
+        padding-right: 3%;
+      }
+    }*/ } }
 @media only screen and (min-width: 1350px) {
   header h1 {
     padding-left: 8.35%; }
-  header nav ul li {
-    padding-right: 5%; } }
+  header nav ul {
+    /*li {
+      padding-right: 5%;
+    }*/ } }
 /*--- MAIN ---*/
 main .firstSection, main .secondSection {
   padding-top: 30px;
