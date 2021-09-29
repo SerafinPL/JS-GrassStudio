@@ -183,7 +183,8 @@ header {
       padding-right: 50px; }
       header nav ul li {
         float: right;
-        text-align: center; }
+        text-align: center;
+        width: 150px; }
         header nav ul li a {
           font-size: 25px; }
       header nav .dropdown {
