@@ -4,6 +4,10 @@ function showDropDown() {
 	this.children[1].style.display = 'block';
 }
 
+function onClickShowDropDown() {
+	this.children[1].style.display = 'block';
+}
+
 const hideDropDown= (event) => {
 	event.target.children[1].style.display = 'none';
 }
@@ -21,6 +25,7 @@ let elements = document.getElementsByClassName('haveDropdown');
 for (element of elements) {
 	element.addEventListener('mouseover', showDropDown);
 	element.addEventListener('mouseleave', hideDropDown);
+	element.addEventListener('click', onClickShowDropDown);
 }
 
 let photos = document.getElementsByClassName('photo');
