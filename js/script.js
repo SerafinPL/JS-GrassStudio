@@ -5,7 +5,13 @@ function showDropDown() {
 }
 
 function onClickShowDropDown() {
-	this.children[1].style.display = 'block';
+
+	if (this.children[1].style.display == 'block'){
+		this.children[1].style.display = 'none';
+	}else{
+
+		this.children[1].style.display = 'block';
+	}
 }
 
 const hideDropDown= (event) => {
